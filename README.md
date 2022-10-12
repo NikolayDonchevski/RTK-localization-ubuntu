@@ -95,14 +95,18 @@ In Windows:
 In Ubuntu:
 
 1. Connect the rover/base to the computer
-2. Open a terminal and run the following command to give permission for data transmission over the serial port:
-  1. sudo chmod 666 /dev/ttyACM0
-3. Install the required libraries via the terminal, if you don&#39;t have them already (this is done only once):
-  1. python -m pip3 install --upgrade pyubx2
-  2. sudo apt pip3 install rospy
-  3. sudo apt pip3 install serial
-  4. sudo apt pip3 install transformations
-  5. sudo apt pip3 install pyubx2
+2. Open a terminal and run the following command to give permission for data transmission over the serial port
+  ```
+  sudo chmod 666 /dev/ttyACM0
+  ```
+3. Install the required libraries via the terminal, if you don&#39;t have them already (this is done only once)
+```
+  python -m pip3 install --upgrade pyubx2
+  sudo apt pip3 install rospy
+  sudo apt pip3 install serial
+  sudo apt pip3 install transformations
+  sudo apt pip3 install pyubx2
+  ```
 4. Run the localization.py script
 
 The script that we have made performs the following actions:
